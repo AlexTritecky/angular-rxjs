@@ -1,0 +1,23 @@
+<mat-sidenav-container fullscreen>
+
+  <mat-sidenav align="end" #start (click)="start.close()">
+    <app-sidebar-nav></app-sidebar-nav>
+  </mat-sidenav>
+
+  <mat-toolbar color="primary">
+    <div class="toolbar-tools">
+      <button mat-button mat-icon-button color="primary" (click)="start.open('mouse')">
+        <mat-icon>menu</mat-icon>
+      </button>
+
+      <div class="filler"></div>
+    </div>
+  </mat-toolbar>
+
+  <app-messages></app-messages>
+
+  <app-loader></app-loader>
+
+  <router-outlet></router-outlet>
+
+</mat-sidenav-container>
