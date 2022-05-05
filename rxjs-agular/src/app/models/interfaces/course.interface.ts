@@ -1,3 +1,5 @@
+import { Lesson } from "./lesson.interfaces";
+
 export interface Course {
   id: string;
   description: string;
@@ -13,4 +15,10 @@ export interface Course {
 
 export function sortCoursesBySeqNo(c1: Course, c2: Course) {
   return c1.seqNo - c2.seqNo;
+}
+
+
+export interface CourseData {
+  course: Course;
+  lessons: Lesson[];
 }

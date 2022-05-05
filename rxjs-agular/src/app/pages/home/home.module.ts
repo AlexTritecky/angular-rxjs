@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './page/home/home.component';
 
+import {MatTabsModule} from '@angular/material/tabs';
+import { SharedModule } from '@shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -11,7 +13,9 @@ import { HomeComponent } from './page/home/home.component';
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    MatTabsModule,
+    SharedModule
   ]
 })
 export class HomeModule { }

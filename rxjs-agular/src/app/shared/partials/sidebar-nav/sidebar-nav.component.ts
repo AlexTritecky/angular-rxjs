@@ -15,5 +15,7 @@ export class SidebarNavComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  logout() {
+    this.auth.logout();
+  }
 }
